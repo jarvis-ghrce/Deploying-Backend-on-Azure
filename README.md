@@ -1,43 +1,81 @@
-<h1> Welcome to Azure Backend Deployment Event by Jarvis</h1>
-<h6> This will brief you guys about some keypoints like
+# Welcome to Azure Backend Deployment Event by Jarvis
+
+This event will brief you about key topics such as:
 - Azure
 - Docker
 - FastAPIs
 - Backend Deployment
-The event will be conducted in 3 phases:
-In first phase you will learn about FastAPI and how to deploy it on localhost:8000
-the second phase will cover topics such as Docker and deployment on Docker hub
-the last phase will conclude the event with deployment on Microsoft Azure with the help of VS Code
 
-</h6>
-<h2>Quick Roadmap to the event!</h2>
-<h5>- Download the zip file from JARVIS GHRCE github account</h5>
-<h5>- Extract the files and open a sew folddr in Visual Studio Code </h5>
-<h5>- Download the file requirements.txt in the terminal</h5>
-<h5>- Run the fastAPI code and generate the link on port 8000</h5>
-<h5>- For docker download docker desktop and keep it running till the program is terminated</h5>
-<h5>- Create a new image in docker and specify its version</h5>
-<h5>- Deploy this image in a container on docker hub or on Azure</h5>
+The event will be conducted in three phases:
+1. **Phase 1**: Learn about FastAPI and how to deploy it on `localhost:8000`.
+2. **Phase 2**: Cover topics such as Docker and deployment on Docker Hub.
+3. **Phase 3**: Conclude with deployment on Microsoft Azure with the help of VS Code.
+
+## Quick Roadmap to the Event!
+
+1. **Download the zip file from JARVIS GHRCE GitHub account**
+2. **Extract the files and open a new folder in Visual Studio Code**
+3. **Install the required dependencies using `requirements.txt`**
+4. **Run the FastAPI code and generate the link on port 8000**
+5. **Download Docker Desktop and keep it running till the program is terminated**
+6. **Create a new image in Docker and specify its version**
+7. **Deploy this image in a container on Docker Hub or on Azure**
+
+## Steps for Deployment
+
+### Phase 1: FastAPI on Localhost 8000
+
+1. **Download the Git file as zip or clone the repo**
+
+   Visit the [JARVIS GHRCE GitHub repository](https://github.com/JARVIS-GHRCE) and download the project zip file or clone the repository.
+
+2. **Open Visual Studio Code**
+
+   Open the extracted folder in Visual Studio Code by selecting `File > Open Folder` and navigating to the extracted folder.
+
+3. **Install requirements in the terminal**
+
+   Open the terminal in VS Code by selecting `Terminal > New Terminal`. Run the following command to install the required dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+
+4. **Run fastAPI Application**
+
+    ```bash
+    uvicorn app.main:app --reload
+
+5. **Click on the link generated and open in new tab**
+   link for example: http://127.0.0.1:8000
+   add /docs on the new tab while opening
+
+6. **Terminate the link by using clrt+C**
+
+### Phase 2: Docker and Docker hub Deployment
+
+1. **Open DockerFile in VS Code**
+2. **Keep the Docker Deskstop open while running the program**
+   
+3. **Build Docker Image**
+
+   ```bash
+   docker build -t jarvis:v1 .
+
+### Phase 3: Deployment on Microsoft Azure
+
+1. **Login to Azure website and create a container**
+2. **Return to terminal and execute**
+   ```bash
+   az acr login -n <your-registry-name>
+   docker tag jarvis:v1 <your-registry-name>.azurecr.io/jarvis:v1
+   docker tag jarvis:v1 <your-registry-name>.azurecr.io/jarvis:v1
+3. **Push and run the container**
+   ```bash
+   docker push <your-registry-name>.azurecr.io/jarvis:v1
+   docker run -p 8000:8000 jarvis:v1
+4. **Congratulations the deployment of FastAPI using Docker and Azure is completed!**
+
+   
 
 
-<h3>STEPS FOR DEPLOYMENT</h3>
-<h5>1. Download the git file as zip or clone the repo</h5>
-<h5>2. Open Visual Studio Code</h5>
-<h5>3. Download requirements in terminal by using command:</h5>
-<h5>pip install -r requirements.txt</h5>
-<h5>4. Open main.py file in VS Code and use this command in terminal</h5>
-<h5>uvicorn app.main:app --reload</h5>
-<h5>5. Copy the link and open in new tab and add /docs at the end</h5>
-<h5>for eg: http://127.0.0.1:8000/docs </h5>
-<h5>6. Open DockerFile in VS Code</h5>
-<h5>7. Use cltr+C to terminate the previous api link opened</h5>
-<h5>8. Use the following commands in terminal:</h5>
-<h5>docker build -t jarvis:v1</h5>
-<h5>9. A docker image will be build and can be seen in Docker Desktop also</h5>
-<h5>10. Move to Azure website and create a new container return to the terminal use following commands:</h5>
-<h5>az acr login -jarvis</h5>
-<h5>docker tag jarvis:v1 jarvis.azurecr.io/jarvis:v1</h5>
-<h5>docker images</h5>
-<h5> docker run -p 8000:8000 jarvis:v1</h5>
-<h5>11. Go to the azure site and deploy the container</h5>
-<h5>12. The deployment is done!</h5>
+   
