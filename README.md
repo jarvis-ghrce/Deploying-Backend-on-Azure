@@ -1,5 +1,15 @@
 <h1> Welcome to Azure Backend Deployment Event by Jarvis</h1>
-<h6>This event will brief you about fastAPI and Docker and how to use them in you deployment.</h6>
+<h6> This will brief you guys about some keypoints like
+- Azure
+- Docker
+- FastAPIs
+- Backend Deployment
+The event will be conducted in 3 phases:
+In first phase you will learn about FastAPI and how to deploy it on localhost:8000
+the second phase will cover topics such as Docker and deployment on Docker hub
+the last phase will conclude the event with deployment on Microsoft Azure with the help of VS Code
+
+</h6>
 <h2>Quick Roadmap to the event!</h2>
 <h5>- Download the zip file from JARVIS GHRCE github account</h5>
 <h5>- Extract the files and open a sew folddr in Visual Studio Code </h5>
