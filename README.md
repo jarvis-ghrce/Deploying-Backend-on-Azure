@@ -1,12 +1,8 @@
 # Welcome to Azure Backend Deployment Event by Jarvis
 
-This event will brief you about key topics such as:
-- Azure
-- Docker
-- FastAPIs
-- Backend Deployment
+This event is hosted by [Atharva Malode](https://github.com/Atharva-Malode) and [Aayush Paigwar](https://github.com/AayushPaigwar). It will guide you through deploying backend services using FastAPI, Docker, and Microsoft Azure. The session will be particularly useful for learning how to deploy machine learning models and scalable backends on Azure.
 
-The event will be conducted in three phases:
+# The event will be conducted in three phases:
 1. **Phase 1**: Learn about FastAPI and how to deploy it on `localhost:8000`.
 2. **Phase 2**: Cover topics such as Docker and deployment on Docker Hub.
 3. **Phase 3**: Conclude with deployment on Microsoft Azure with the help of VS Code.
@@ -75,7 +71,25 @@ The event will be conducted in three phases:
    docker run -p 8000:8000 jarvis:v1
 4. **Congratulations the deployment of FastAPI using Docker and Azure is completed!**
 
+
+## Contribution Note
+
+You can contribute to the repository by making sample API calls in your preferred programming language and submitting them in the `test-your-api-in-different-languages` folder.
+
+### Steps to Contribute:
+
+1. **Fork the Repository**
+
+   Fork the [JARVIS GHRCE GitHub repository](https://github.com/JARVIS-GHRCE) to your own GitHub account.
+
+2. **Clone the Forked Repository**
+
+   Clone the forked repository to your local machine:
+
+   ```bash
+   git clone https://github.com/<your-username>/JARVIS-GHRCE.git
+
+3. **Make chnages and raise a Pull Request.**
+
    
-
-
    
