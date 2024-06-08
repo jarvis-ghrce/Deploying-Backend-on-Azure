@@ -56,6 +56,7 @@ This event is hosted by [Atharva Malode](https://github.com/Atharva-Malode) and 
 
    ```bash
    docker build -t jarvis:v1 .
+   docker run -p 8000:8000 jarvis:v1
 
 ### Phase 3: Deployment on Microsoft Azure
 
@@ -64,11 +65,9 @@ This event is hosted by [Atharva Malode](https://github.com/Atharva-Malode) and 
    ```bash
    az acr login -n <your-registry-name>
    docker tag jarvis:v1 <your-registry-name>.azurecr.io/jarvis:v1
-   docker tag jarvis:v1 <your-registry-name>.azurecr.io/jarvis:v1
 3. **Push and run the container**
    ```bash
    docker push <your-registry-name>.azurecr.io/jarvis:v1
-   docker run -p 8000:8000 jarvis:v1
 4. **Congratulations the deployment of FastAPI using Docker and Azure is completed!**
 
 
