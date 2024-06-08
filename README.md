@@ -23,7 +23,7 @@ This event is hosted by [Atharva Malode](https://github.com/Atharva-Malode) and 
 
 1. **Download the Git file as zip or clone the repo**
 
-   Visit the [JARVIS GHRCE GitHub repository](https://github.com/JARVIS-GHRCE) and download the project zip file or clone the repository.
+   Visit the [JARVIS GHRCE GitHub repository](https://github.com/jarvis-ghrce/Deploying-Backend-on-Azure) and download the project zip file or clone the repository.
 
 2. **Open Visual Studio Code**
 
@@ -80,7 +80,7 @@ You can contribute to the repository by making sample API calls in your preferre
 
 1. **Fork the Repository**
 
-   Fork the [JARVIS GHRCE GitHub repository](https://github.com/JARVIS-GHRCE) to your own GitHub account.
+   Fork the [JARVIS GHRCE GitHub repository](https://github.com/jarvis-ghrce/Deploying-Backend-on-Azure) to your own GitHub account.
 
 2. **Clone the Forked Repository**
 
@@ -89,7 +89,7 @@ You can contribute to the repository by making sample API calls in your preferre
    ```bash
    git clone https://github.com/<your-username>/JARVIS-GHRCE.git
 
-3. **Make chnages and raise a Pull Request.**
+3. **Make changes and raise a Pull Request.**
 
    
    
